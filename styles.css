@@ -1,3 +1,6 @@
+*{
+    cursor: none;
+}
 body{
     background-color: #040303;
 }
@@ -6,7 +9,8 @@ body{
  height: 300px;
  width: 300px;
  perspective: 800px;
- box-shadow: 1px 1px 12px 8px #1C3879 inset, 2px 1px 10px 10px #EB1D36 inset , 2px 1px 12px 14px #FF87B2 ;
+ box-shadow: 1px 1px 12px 8px #1C3879 inset, 2px 1px 10px 10px #EB1D36 inset , 2px 1px 12px 14px #ECB390 ;
+ border-radius: 50%;
 }
 
 .Cube{
@@ -19,7 +23,7 @@ body{
     
 }
 .Cube:hover{
-    transform: translateZ(-300px) rotateX(60deg) rotateY(360deg) scale(0.7);
+    transform: translateZ(-300px) rotateX(60deg) rotateY(360deg) scale(0.4);
 }
 .face{
     position: absolute;
@@ -56,3 +60,26 @@ body{
     
     
 }
+.cursor{
+    width: 3rem;
+    height: 3rem;
+    border: solid #f9df4d 1px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 1;
+    background-color: #FCF8E8;
+    opacity:0.7;
+}
+ .secondCursor{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    transform: translate(190%,190%);
+    background-color: #f9df4d;
+} 
