@@ -1,0 +1,56 @@
+body{
+    background-color: #040303;
+}
+.container{
+ margin: 300px auto;
+ height: 300px;
+ width: 300px;
+ perspective: 800px;
+}
+
+.Cube{
+    height: 300px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transform: translateZ(-300px) rotateX(50deg);
+    position: relative;
+    transition: 2s;
+}
+.Cube:hover{
+    transform: translateZ(-300px) rotateX(60deg) rotateY(360deg);
+}
+.face{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+}
+
+.front{
+    background: linear-gradient(#191919,#1C3879);
+    transform: rotateX(-90deg) translateZ(150px);
+}
+.right{
+    background: linear-gradient(#191919,#EB1D36);
+    transform: rotateY(90deg) translateZ(150px);
+}
+.back{
+    background: linear-gradient(#191919,#1C3879);
+    transform: rotateX(90deg) translateZ(150px);
+}
+.left{
+    background: linear-gradient(#191919,#EB1D36);
+    transform: rotateY(-90deg) translateZ(150px);
+
+}
+
+.top{
+    background: linear-gradient(#191919,#FF87B2);
+    transform: rotateX(0deg) translateZ(150px);
+    
+}
+.bottom{
+    background: linear-gradient(#191919,#FF87B2);
+    transform: rotateX(180deg) translateZ(150px);
+    
+    
+}
