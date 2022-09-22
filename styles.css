@@ -6,6 +6,7 @@ body{
  height: 300px;
  width: 300px;
  perspective: 800px;
+ box-shadow: 1px 1px 12px 8px #1C3879 inset, 2px 1px 10px 10px #EB1D36 inset , 2px 1px 12px 14px #FF87B2 ;
 }
 
 .Cube{
@@ -15,9 +16,10 @@ body{
     transform: translateZ(-300px) rotateX(50deg);
     position: relative;
     transition: 2s;
+    
 }
 .Cube:hover{
-    transform: translateZ(-300px) rotateX(60deg) rotateY(360deg);
+    transform: translateZ(-300px) rotateX(60deg) rotateY(360deg) scale(0.7);
 }
 .face{
     position: absolute;
