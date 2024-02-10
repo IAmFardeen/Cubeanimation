@@ -17,7 +17,7 @@ body{
     height: 300px;
     width: 300px;
     transform-style: preserve-3d;
-    transform: translateZ(-300px) rotateX(50deg);
+    transform: translateZ(-300px) rotateX(100deg);
     position: relative;
     transition: 2s;
     
